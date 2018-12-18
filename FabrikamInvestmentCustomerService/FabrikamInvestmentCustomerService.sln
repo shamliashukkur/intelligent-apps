@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallFabrikamCustomerService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabrikamCustomerServiceBot", "FabrikamCustomerServiceBot\FabrikamCustomerServiceBot.csproj", "{EC00EC3B-C9D1-4163-A8B3-BBB4C2BD210B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuisBot", "LuisBot\LuisBot.csproj", "{3092D12A-281C-42C8-BE1B-684D3BA248C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EC00EC3B-C9D1-4163-A8B3-BBB4C2BD210B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC00EC3B-C9D1-4163-A8B3-BBB4C2BD210B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC00EC3B-C9D1-4163-A8B3-BBB4C2BD210B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3092D12A-281C-42C8-BE1B-684D3BA248C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3092D12A-281C-42C8-BE1B-684D3BA248C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3092D12A-281C-42C8-BE1B-684D3BA248C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3092D12A-281C-42C8-BE1B-684D3BA248C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
