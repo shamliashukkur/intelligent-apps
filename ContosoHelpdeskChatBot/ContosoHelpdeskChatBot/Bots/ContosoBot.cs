@@ -19,13 +19,9 @@ namespace ContosoHelpdeskChatBot.Bots
             var dialogState = botAccessors.DialogStateAccessor;
             // compose dialogs
             dialogs = new DialogSet(dialogState);
-            dialogs.Add(MainDialog.Instance);
-            dialogs.Add(LocalAdminDialog.Instance);
-            dialogs.Add(ResetPasswordDialog.Instance);
-            dialogs.Add(InstallAppDialog.Instance);
-            dialogs.Add(new ChoicePrompt("choicePrompt"));
-            dialogs.Add(new TextPrompt("textPrompt"));
-            dialogs.Add(new NumberPrompt<int>("numberPrompt"));
+                    
+            //dialogs.Add(MainDialog.Instance);
+
             BotAccessors = botAccessors;
         }
 
@@ -36,7 +32,7 @@ namespace ContosoHelpdeskChatBot.Bots
             if (turnContext.Activity.Type == ActivityTypes.Message)
             {
                 //initialize state if necessary
-                var state = await BotAccessors.ContosoBotStateStateAccessor.GetAsync(turnContext, () => new ContosoBotState(), cancellationToken);
+                //var state = await BotAccessors.ContosoBotStateStateAccessor.GetAsync(turnContext, () => new ContosoBotState(), cancellationToken);
 
                 turnContext.TurnState.Add("BotAccessors", BotAccessors);
 
@@ -44,12 +40,7 @@ namespace ContosoHelpdeskChatBot.Bots
 
                 if (dialogCtx.ActiveDialog == null)
                 {
-                    await dialogCtx.BeginDialogAsync(MainDialog.Id, cancellationToken);
-                }
-                else if(turnContext.Activity.Text.ToLower().Trim() == "cancel")
-                {
-                    await turnContext.SendActivityAsync("Cancelled!", cancellationToken: cancellationToken);
-                    await dialogCtx.CancelAllDialogsAsync(cancellationToken);
+                    //await dialogCtx.BeginDialogAsync(MainDialog.Id, cancellationToken);
                 }
                 else
                 {

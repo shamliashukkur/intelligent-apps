@@ -92,7 +92,7 @@ namespace ContosoHelpdeskChatBot
                 var accessors = new BotAccessors(conversationState)
                 {
                     DialogStateAccessor = conversationState.CreateProperty<DialogState>(BotAccessors.DialogStateAccessorName),
-                    ContosoBotStateStateAccessor = conversationState.CreateProperty<ContosoBotState>(BotAccessors.ContosoBotStateAccessorName)
+                    //ContosoBotStateStateAccessor = conversationState.CreateProperty<ContosoBotState>(BotAccessors.ContosoBotStateAccessorName)
                 };
 
                 return accessors;
