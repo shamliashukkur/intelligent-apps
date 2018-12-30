@@ -11,16 +11,16 @@
             "name": "development"
         },
         {
-            "type": "endpoint",
-            "appId": "1ba66526-ba46-48b0-8c28-91c95a02de93",
-            "appPassword": "uojqrEJI%xtOGHT65866^:!",
-            "endpoint": "https://contosohelpbot.azurewebsites.net/api/messages",
-            "id": "2",
-            "name": "production"
+        "type": "endpoint",
+        "appId": "",
+        "appPassword": "",
+        "endpoint": "http://localhost:3978/api/messages",
+        "id": "2",
+        "name": "production"
         }
     ],
     "padlock": "",
     "version": "2.0",
-    "path": "C:\\Users\\shams\\Desktop\\IPDEV\\intelligent-apps\\ContosoHelpdeskChatBot\\ContosoHelpdeskChatBot\\ContosoHelpdeskChatBot.bot",
+    "path": "",
     "overrides": null
 }
