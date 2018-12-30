@@ -20,7 +20,7 @@ namespace ContosoHelpdeskChatBot.Bots
             // compose dialogs
             dialogs = new DialogSet(dialogState);
                     
-            //dialogs.Add(MainDialog.Instance);
+            dialogs.Add(MainDialog.Instance);
 
             BotAccessors = botAccessors;
         }
@@ -40,7 +40,7 @@ namespace ContosoHelpdeskChatBot.Bots
 
                 if (dialogCtx.ActiveDialog == null)
                 {
-                    //await dialogCtx.BeginDialogAsync(MainDialog.Id, cancellationToken);
+                     await dialogCtx.BeginDialogAsync(MainDialog.Id, cancellationToken);
                 }
                 else
                 {

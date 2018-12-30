@@ -1,26 +1,26 @@
 {
-    "name": "ContosoHelpdeskChatBot",
-    "description": "",
-    "services": [
-        {
-            "type": "endpoint",
-            "appId": "",
-            "appPassword": "",
-            "endpoint": "http://localhost:3978/api/messages",
-            "id": "1",
-            "name": "development"
-        },
-        {
-        "type": "endpoint",
-        "appId": "",
-        "appPassword": "",
-        "endpoint": "http://localhost:3978/api/messages",
-        "id": "2",
-        "name": "production"
-        }
-    ],
-    "padlock": "",
-    "version": "2.0",
-    "path": "",
-    "overrides": null
+  "name": "ContosoHelpdeskChatBot",
+  "description": "",
+  "services": [
+    {
+      "type": "endpoint",
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "id": "1",
+      "name": "development"
+    },
+    {
+      "type": "endpoint",
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "id": "2",
+      "name": "production"
+    }
+  ],
+  "padlock": "",
+  "version": "2.0",
+  "path": "",
+  "overrides": null
 }
