@@ -17,6 +17,7 @@ namespace ContosoHelpdeskChatBot.Bots
         public ContosoBot(BotAccessors botAccessors)
         {
             var dialogState = botAccessors.DialogStateAccessor;
+
             // compose dialogs
             dialogs = new DialogSet(dialogState);
                     

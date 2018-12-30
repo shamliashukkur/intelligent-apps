@@ -27,14 +27,18 @@ namespace ContosoHelpdeskChatBot.Dialogs
 
                 if (response == "Install Application")
                 {
+                    //await stepContext.SendAc("You want to install an application");
+                    
                 }
 
                 if (response == "Reset Password")
                 {
+                    //stepContext.Context.Activity.CreateReply("You want to reset your password");
                 }
 
                 if (response == "Request Local Admin")
                 {
+                    //stepContext.Context.Activity.CreateReply("You want to request local admin access!");
                 }
                 return await stepContext.NextAsync();
             });
