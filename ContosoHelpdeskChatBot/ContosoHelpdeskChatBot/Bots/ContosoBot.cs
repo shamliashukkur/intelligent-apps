@@ -21,6 +21,8 @@ namespace ContosoHelpdeskChatBot.Bots
             dialogs = new DialogSet(dialogState);
                     
             dialogs.Add(MainDialog.Instance);
+            dialogs.Add(new ChoicePrompt("choicePrompt"));
+
             BotAccessors = botAccessors;
         }
 
